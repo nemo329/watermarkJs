@@ -2,10 +2,10 @@
 
 A simple electron application that lets you add a watermark to certain PDF documents (such as your ID card or passport), thus preventing them from being reused by scammers. 
 <p align="center">
-  <img src="https://github.com/nemo329/watermarkjs/readme/appCapture.png?raw=true"/>
+  <img src="https://raw.githubusercontent.com/nemo329/watermarkJs/master/readme/appCapture.PNG"/>
 </p>
 <p align="center">
-  <img src="https://github.com/nemo329/watermarkjs/readme/pdfCapture.png?raw=true"/>
+  <img src="https://raw.githubusercontent.com/nemo329/watermarkJs/master/readme/pdfCapture.PNG"/>
 </p>
 ## Getting Started
 You can simply download the binaries [here](https://github.com/nemo329/watermarkJs/releases), extract the zip file  and run `watermarkjs.exe`.
