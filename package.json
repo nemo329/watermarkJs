@@ -1,0 +1,27 @@
+{
+  "name": "watermarkjs",
+  "version": "1.0.0",
+  "description": "Electron application for watermarking official documents",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "packager": "electron-packager ./ --platform=win32 --icon=./resources/watermarkjs.ico"
+  },
+  "keywords": [
+    "watermaking",
+    "documents",
+    "passport"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.1.0",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "electron-packager": "^17.1.2",
+    "node-poppler": "^7.1.0",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.14.0"
+  }
+}

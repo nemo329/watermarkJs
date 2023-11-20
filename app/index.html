@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <link rel="stylesheet" href="../src/stylesheets/bulma.min.css">
+  <link rel="stylesheet" href="../src/stylesheets/style.css">
+
+  <title>watermarkJs</title>
+</head>
+
+<body>
+  <div class='container hero is-fullheight'>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">watermarkJs</h1>
+        <form>
+          <div class="field">
+            <label class="label">Text to be written on the document :</label>
+            <div class="control">
+              <input id="messageInput" class="input" type="text"
+                placeholder="This document is intended exclusively for ...">
+            </div>
+          </div>
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Select a file</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input id="filePicker" class="input is-primary" type="file" accept=".pdf">
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>The watermarked document will be located in the same location as your main file, with the word watermarked
+            at
+            the end.</p>
+          <div class="btnContainer">
+            <button type="submit" class="button is-primary">Get the document</button>
+          </div>
+        </form>
+       
+      </div>
+      
+      <span  id="endSuccess" class="tag is-success"></span>
+    </section>
+    <footer class="has-text-centered is-flex-align-items-flex-end mt-auto">
+      <small>
+        <span>Entirely open source and documents remain on the computer</span>
+        <br />
+      </small>
+    </footer>  </div>
+</body>
+<script src="../src/renderer.js"></script>
+<script type="module" src="../src/index.js"></script>
+
+</html>
